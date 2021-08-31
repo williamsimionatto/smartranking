@@ -1,14 +1,13 @@
 import * as monogoose from 'mongoose';
 
 export const JogadroSchema = new monogoose.Schema({
-  telfoneCelular: {
-    type: String,
-    unique: true
-  }, 
   email: {
     type: String,
     unique: true
   },
+  telfoneCelular: {
+    type: String,
+  }, 
   nome: {
     type: String
   },
